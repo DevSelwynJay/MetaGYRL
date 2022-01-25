@@ -701,6 +701,12 @@ header nav .right-menu .btn::after {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 5rem 0;
+  }
+}
+
 .footer .footer-icon-1 {
   position: absolute;
   left: 2rem;
@@ -1068,6 +1074,12 @@ button {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .hero {
+    background-position: top right;
+  }
+}
+
 .hero--container {
   margin: 0 auto;
   max-width: 1012px;
@@ -1103,6 +1115,12 @@ button {
 
 .nft {
   padding: 88px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nft {
+    padding: 5rem 0;
+  }
 }
 
 .nft--container {
@@ -1152,6 +1170,7 @@ button {
 @media only screen and (max-width: 768px) {
   .nft--description ul li {
     font-size: 18px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1200,6 +1219,12 @@ button {
 
 .getting-started {
   padding-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .getting-started {
+    padding: 5rem 0;
+  }
 }
 
 .getting-started--description {
@@ -1387,6 +1412,12 @@ button {
 
 .faqs {
   padding-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .faqs {
+    padding: 5rem 0;
+  }
 }
 
 .faqs--inner {

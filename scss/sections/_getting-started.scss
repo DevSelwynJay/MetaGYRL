@@ -1,7 +1,9 @@
 .getting-started {
 
   padding-top: 10rem;
-
+  @media only screen and (max-width: 768px) {
+    padding: 5rem 0;
+  }
 
     &--description {
       text-align: center;
