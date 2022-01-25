@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+main{
+  overflow-x: hidden;
+}
+
 //HEADINGS
 h1 {
   font-size: 70px;
@@ -110,6 +114,10 @@ p {
     text-align: center;
     cursor: pointer;
 
+    @media only screen and (max-width: 768px) {
+      padding: 15px 10px;
+    }
+
     
     &::before {
       content: "";
@@ -137,6 +145,10 @@ p {
   margin-top: .8rem;
   cursor: pointer;
   transition: all 10ms ease-in;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0.4rem 3rem;
+  }
 
   &::after {
     content: "";
