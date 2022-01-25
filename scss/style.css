@@ -697,7 +697,7 @@ header nav .right-menu .btn::after {
   background: url("../images/bg-footer.png");
   background-size: cover;
   background-position: top;
-  padding: 90px 0 200px 0;
+  padding: 210px 0 100px 0;
   position: relative;
 }
 
@@ -1198,6 +1198,10 @@ button {
           transform: translate(-50%, -50%);
 }
 
+.getting-started {
+  padding-top: 10rem;
+}
+
 .getting-started--description {
   text-align: center;
 }
@@ -1382,7 +1386,7 @@ button {
 }
 
 .faqs {
-  margin-top: 4rem;
+  padding-top: 10rem;
 }
 
 .faqs--inner {
