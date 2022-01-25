@@ -963,6 +963,7 @@ form textarea {
   width: 100%;
   position: relative;
   display: block;
+  outline: none;
 }
 
 form input,
