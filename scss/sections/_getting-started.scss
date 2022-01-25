@@ -1,0 +1,148 @@
+.getting-started {
+    &--description {
+      text-align: center;
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      &-upper {
+        a {
+          margin-bottom: 80px;
+        }
+      }
+
+      &-lower {
+        position: relative;
+        h2 {
+          width: 618px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+
+          @media only screen and (max-width: 768px) {
+            width: 90%;
+          }
+        }
+        p {
+          margin-bottom: 40px;
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .icon {
+          position: absolute;
+          right: -4rem;
+          bottom: 0;
+        }
+      }
+    }
+
+    &--steps {
+      padding: 1rem 376px 1rem 103px;
+      position: relative;
+
+      @media only screen and (max-width: 1700px) {
+        padding: 1rem 10% 1rem 103px;
+      }
+
+      @media only screen and (max-width: 1400px) {
+        padding: 1rem 5% 1rem 103px;
+      }
+
+      @media only screen and (max-width: 900px) {
+        padding: 1rem 22px;
+      }
+
+      .icon1 {
+        position: absolute;
+        right: -120px;
+        top: 70px;
+      }
+      .icon2 {
+        position: absolute;
+        right: -120px;
+        bottom: 70px;
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media only screen and (max-width: 768px) {
+          flex-direction: column-reverse;
+          row-gap: 1.5rem;
+          margin-bottom: 50px;
+         }
+
+        a {
+          width: 242px;
+        }
+
+        .card {
+          display: flex;
+          border: 2px solid $black;
+          border-radius: 14px;
+          position: relative;
+          margin-left: 2rem;
+
+          @media only screen and (max-width: 1280px) {
+           flex-direction: column;
+          }
+
+          @media only screen and (max-width: 768px) {
+            margin-left: 0;
+           }
+
+          &--image {
+            padding: 40px 2rem;
+
+            @media only screen and (max-width: 1280px) {
+              padding: 40px 1rem;
+              display: grid;
+              place-items: center;
+            }
+
+            img {
+              width: 300px;
+              height: 300px;
+            }
+          }
+          &--text-holder {
+            padding: 0 56.81px;
+            margin-top: 60px;
+
+            @media only screen and (max-width: 1400px) {
+              padding: 0 36.81px;
+            }
+            @media only screen and (max-width: 1280px) {
+              padding: 0 20px;
+            }
+
+            h3 {
+              margin-bottom: 35px;
+            }
+            p {
+              margin-bottom: 40px;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/blue-overlay.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            left: -18px;
+            top: 18px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+
+
+  }

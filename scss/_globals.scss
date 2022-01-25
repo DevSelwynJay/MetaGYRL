@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+//COLORS
+$black: #282828;
+$blue: #8ccdee;
+$blue-dark: #60bae7;
+$pink: #faadce;
+$white: #f9f9f8;
+$pink-dark: #f77db1;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $black;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+//HEADINGS
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 77px;
+
+  @media only screen and (max-width: 1280px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 45px;
+  }
+ 
+
+}
+h2 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 800;
+  @media only screen and (max-width: 1280px) {
+    font-size: 45px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 36px;
+  }
+}
+h3 {
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 800;
+  @media only screen and (max-width: 1280px) {
+    font-size: 26px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+h4 {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 800;
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+//PARAGRAPH
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 16px;
+  line-height: 32px;
+}
+.p-medium{
+  font-size: 22px;
+  line-height: 44px;
+}
+
+//LAYOUT
+.wrapper {
+  max-width: 1114px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+//UTILITIES
+.btn-center{
+  text-align: center;
+}
+
+//COMPONENTS
+.btn--pink{
+    border: $black 2px solid;
+    border-radius: 14px;
+    position: relative;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $black;
+    padding: 18px 16px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+
+    
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $pink;
+      border-radius: 12px;
+      left: -6px;
+      top: 6px;
+      z-index: -1;
+    }
+
+}
+.btn--blue {
+  border: $black 2px solid;
+  border-radius: 14px;
+  position: relative;
+  background: none;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6rem 3.4rem;
+  font-weight: 700;
+  margin-top: .8rem;
+  cursor: pointer;
+  transition: all 10ms ease-in;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blue;
+    border-radius: 14px;
+    left: -6px;
+    top: 6px;
+    z-index: -1;
+    transition: all 10ms ease-in;
+  }
+
+}
+//IMAGES
+img{
+  max-width: 100%;
+}

@@ -1,0 +1,99 @@
+form {
+
+    .input--holder {
+      border-radius: 14px;
+      position: relative;
+      font-weight: 700;
+      color: $black;
+      margin-bottom: 11px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $white;
+        border-radius: 14px;
+        left: -6px;
+        top: 6px;
+        z-index: -1;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    input,
+    textarea {
+      border-radius: 14px;
+      border: $black solid 2px;
+      padding: 11px 20px;
+      font-size: 16px;
+      color: $black;
+      font-family: "Poppins", sans-serif;
+
+      ::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        font-family: "Poppins", sans-serif;
+        color: $black;
+      }
+    }
+
+}
+
+button{
+    cursor: pointer;
+}
+
+  //MODAL
+  .join-now{
+
+    &--backdrop{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.589);
+        display: none;
+        z-index: 50;
+    }
+     
+      
+    &--container{
+        border: 2px solid $black;
+        border-radius: 14px;
+        background: $pink;
+        padding: 54px 70px;
+        position: relative;
+        z-index: 51;
+        
+        margin: 0 auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: none;
+
+        h3{
+            text-align: center;
+            margin-bottom: 38px;
+        }
+
+    }
+
+    .open{
+        display: block;
+    }
+
+
+  }
