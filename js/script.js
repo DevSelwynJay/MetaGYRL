@@ -17,6 +17,7 @@ for (i = 0; i < acc.length; i++) {
 //JOIN NOW POP UP
 var btn = document.querySelector("#join-now--popup-btn");
 var btn2 = document.querySelector("#join-now--popup-btn2");
+var btn3 = document.querySelector("#join-now--popup-btn-mobile");
 var backdrop = document.querySelector("#join-now--popup-backdrop");
 var form = document.querySelector("#join-now--popup");
 var body = document.querySelector("body");
@@ -32,7 +33,6 @@ btn.addEventListener('click',function(){
     backdrop.classList.add('open');
     body.style.overflowY = "hidden";
   }});
-
 btn2.addEventListener('click',function(){
   if(form.classList.contains('open')){ 
     form.classList.remove('open');
@@ -44,7 +44,17 @@ btn2.addEventListener('click',function(){
     backdrop.classList.add('open');
     body.style.overflowY = "hidden";
   }});
-
+btn3.addEventListener('click',function(){
+if(form.classList.contains('open')){ 
+	form.classList.remove('open');
+	backdrop.classList.remove('open');
+	body.style.overflowY = "unset";
+}
+else{ 
+	form.classList.add('open');
+	backdrop.classList.add('open');
+	body.style.overflowY = "hidden";
+}});
   backdrop.addEventListener('click',function(){
     form.classList.remove('open');
     backdrop.classList.remove('open');
