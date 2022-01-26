@@ -130,7 +130,7 @@ contactLink.addEventListener('click',function(){
     backDrop.classList.remove('show-backdrop');
 });
 
-//NAVIGATION ACTIVE STATE BASED ON SCROLLING
+/*NAVIGATION ACTIVE STATE BASED ON SCROLLING
 var advantages = document.querySelector(".link-advantages");
 var faqs = document.querySelector(".link-faqs");
 var contact = document.querySelector(".link-contact");
@@ -173,8 +173,8 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 });
-
-//NAVIGATION ACTIVE STATE BASED ON SCROLLING --MOBILE
+*/
+/*NAVIGATION ACTIVE STATE BASED ON SCROLLING --MOBILE
 var advantages_mobile = document.querySelector(".mobile-link-adv");
 var faqs_mobile = document.querySelector(".mobile-link-faqs");
 var contact_mobile = document.querySelector(".mobile-link-contact");
@@ -218,5 +218,5 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 });
-
+*/
 

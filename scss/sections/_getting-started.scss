@@ -1,8 +1,12 @@
 .getting-started {
 
-  padding-top: 10rem;
+  padding-top: 5rem;
+
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 50px 0;
   }
 
     &--description {
@@ -20,6 +24,11 @@
 
       &-lower {
         position: relative;
+
+        @media only screen and (max-width: 500px) {
+          margin-bottom: 32px;
+        }
+
         h2 {
           width: 618px;
           margin: 0 auto;
@@ -28,12 +37,23 @@
           @media only screen and (max-width: 768px) {
             width: 90%;
           }
+
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+          }
+          
         }
         p {
           margin-bottom: 40px;
           width: 85%;
           margin-left: auto;
           margin-right: auto;
+
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            margin-bottom: 32px;
+          }
+
         }
         .icon {
           position: absolute;
@@ -59,6 +79,11 @@
         padding: 1rem 22px;
       }
 
+      @media only screen and (max-width: 500px) {
+        padding: 0 22px;
+      }
+      
+
       .icon1 {
         position: absolute;
         right: -120px;
@@ -76,9 +101,13 @@
         margin-bottom: 40px;
 
         @media only screen and (max-width: 768px) {
-          flex-direction: column-reverse;
+          flex-direction: column;
           row-gap: 1.5rem;
           margin-bottom: 50px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
          }
 
         a {
@@ -127,9 +156,15 @@
 
             h3 {
               margin-bottom: 35px;
+              @media only screen and (max-width: 500px) {
+                margin-bottom: 20px;
+              }
             }
             p {
               margin-bottom: 40px;
+              @media only screen and (max-width: 500px) {
+                margin-bottom: 32px;
+              }
             }
           }
 

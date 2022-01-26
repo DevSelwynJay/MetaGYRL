@@ -1,9 +1,12 @@
 .faqs {
 
-      padding-top: 10rem;
+      padding-top: 3rem;
 
       @media only screen and (max-width: 768px) {
         padding: 5rem 0;
+      }
+      @media only screen and (max-width: 500px) {
+        padding: 50px 0;
       }
 
     &--inner {
@@ -17,10 +20,16 @@
       @media only screen and (max-width: 900px) {
         padding: 20px 0;
        }
+       @media only screen and (max-width: 500px) {
+        padding: 0;
+      }
 
       h2 {
         text-align: center;
         margin-bottom: 64px;
+        @media only screen and (max-width: 500px) {
+          margin-bottom: 50px;
+        }
       }
     }
     &--container {
